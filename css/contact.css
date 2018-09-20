@@ -1,0 +1,166 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.box {
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+.box .top_bg .content {
+  width: 61.482%;
+  height: 77px;
+  margin: 0 auto;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.box .top_bg .content .logo {
+  float: left;
+  width: 50%;
+}
+.box .top_bg .content .logo img {
+  margin-top: 10px;
+}
+.box .top_bg .content .nav {
+  width: 50%;
+  height: 32px;
+  line-height: 48px;
+  padding-top: 1em;
+  text-align: right;
+}
+.box .top_bg .content .nav ul {
+  list-style: none;
+  float: right;
+  height: 32px;
+}
+.box .top_bg .content .nav ul li {
+  float: left;
+  margin: 0 6px;
+  font-weight: bold;
+  color: white;
+}
+.box .top_bg .content .nav ul li a {
+  text-decoration: none;
+  color: white;
+}
+.box .message {
+  padding: 3em 0px;
+}
+.box .message .content {
+  width: 1170px;
+  margin: 0 auto;
+  margin-right: auto;
+  margin-left: auto;
+}
+.box .message .content .cont {
+  height: 432px;
+}
+.box .message .content .cont .cont_top {
+  text-align: center;
+  padding: 0em 0px 4em 0px;
+}
+.box .message .content .cont .cont_top h3 {
+  color: #000;
+  font-size: 1.7em;
+  font-weight: 400;
+}
+.box .message .content .cont .cont_top p {
+  font-size: 1em;
+  font-weight: 400;
+  color: #999;
+}
+.box .message .content .cont .left {
+  width: 760px;
+  height: 320px;
+  float: left;
+  position: relative;
+  min-height: 1px;
+}
+.box .message .content .cont .left input:nth-child(1),
+.box .message .content .cont .left input:nth-child(2) {
+  width: 40%;
+  padding: 8px;
+  font-size: 14px;
+  font-weight: 400;
+  color: #000;
+  outline: none;
+  margin: 0px 0px 10px 0px;
+}
+.box .message .content .cont .left textarea {
+  outline: none;
+  resize: none;
+  font-size: 14px;
+  font-weight: 400;
+  width: 83%;
+  height: 15em;
+  padding: 10px;
+}
+.box .message .content .cont .left .btn {
+  width: 20%;
+  padding: 10px;
+  background: #999;
+  outline: none;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+}
+.box .message .content .cont .right {
+  width: 380px;
+  height: 179px;
+  float: left;
+  position: relative;
+  min-height: 1px;
+}
+.box .message .content .cont .right h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  font-family: inherit;
+  font-weight: 500;
+  line-height: 1.1;
+  color: inherit;
+}
+.box .message .content .cont .right div span {
+  width: 42px;
+  height: 40px;
+  display: inline-block;
+  background: url(../images/ftr-icons.png) no-repeat;
+  margin: 10px 3px 0px 0px;
+  cursor: pointer;
+}
+.box .message .content .cont .right div span:nth-child(1) {
+  background-position: 0px 0px;
+  opacity: 0.4;
+}
+.box .message .content .cont .right div span:nth-child(2) {
+  background-position: -44px 0px;
+  opacity: 0.4;
+}
+.box .message .content .cont .right div span:nth-child(3) {
+  background-position: -88px 0px;
+  opacity: 0.4;
+}
+.box .message .content .cont .right div span:nth-child(4) {
+  background-position: -131px 0px;
+  opacity: 0.4;
+}
+.box .footer {
+  background-color: #231F20;
+  padding: 1.5em 0em;
+}
+.box .footer .content {
+  width: 61.482%;
+  height: auto;
+  margin: 0 auto;
+  margin-right: auto;
+  margin-left: auto;
+}
+.box .footer .content .footer_cont p {
+  text-align: center;
+  color: #fff;
+  font-size: 15px;
+}
+.box .footer .content .footer_cont p a {
+  color: deepskyblue;
+}

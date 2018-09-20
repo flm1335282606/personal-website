@@ -1,0 +1,546 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  width: 100%;
+  height: 100%;
+  background: rgba(34, 34, 34);
+}
+html,
+body {
+  min-height: 101%;
+}
+.bg {
+  position: fixed;
+  left: 0;
+  background-image: url(../images/1.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  opacity: 1;
+}
+.big_img {
+  width: 400px;
+  height: 400px;
+  display: none;
+  position: absolute;
+  left: 50%;
+  margin-left: -200px;
+  top: 45%;
+  z-index: 20;
+  opacity: 0.8;
+}
+.big_img .path {
+  width: 100%;
+  height: 100%;
+}
+.xuanze {
+  position: absolute;
+  right: 20%;
+  top: 12.5%;
+  z-index: 10;
+}
+.xuanze .change {
+  background-image: url(../images/1.png);
+  background-repeat: no-repeat;
+  background-position: right center;
+  outline: 0;
+  border: 0;
+  background-color: black;
+  color: white;
+  width: 180px;
+  padding: 0 5px;
+  font-size: 12px;
+  height: 30px;
+  line-height: 30px;
+  box-shadow: none;
+  -webkit-box-shadow: 0 0 0 0;
+  -moz-box-shadow: 0 0 0 0;
+  box-shadow: 0 0 0 0;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  text-indent: 0.01px;
+  text-overflow: '';
+}
+.list {
+  position: absolute;
+  left: 20%;
+  top: 20.5%;
+  z-index: 10;
+}
+.list ul li {
+  list-style: none;
+  width: 120px;
+  height: 120px;
+  margin: 3px 0px;
+  background-color: #0e0e0e;
+  position: relative;
+}
+.list ul li div {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: 1px solid white;
+  position: absolute;
+  left: 50%;
+  margin-left: -40px;
+  top: 50%;
+  margin-top: -40px;
+  cursor: pointer;
+}
+.list ul li div span {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  left: 50%;
+  margin-left: -15px;
+  top: 50%;
+  margin-top: -15px;
+}
+.list ul li:nth-child(1) div span {
+  background: url(../images/house.svg) no-repeat;
+  background-size: 30px 30px ;
+}
+.list ul li:nth-child(2) div span {
+  background: url(../images/head.svg) no-repeat;
+  background-size: 30px 30px ;
+}
+.list ul li:nth-child(3) div span {
+  background: url(../images/xiangzi.svg) no-repeat;
+  background-size: 30px 30px ;
+}
+.list ul li:nth-child(4) div span {
+  background: url(../images/set.svg) no-repeat;
+  background-size: 30px 30px ;
+}
+.list ul li:nth-child(5) div span {
+  background: url(../images/qiu.svg) no-repeat;
+  background-size: 30px 30px ;
+}
+.logo {
+  position: absolute;
+  left: 46%;
+  top: 20.5%;
+  z-index: 10;
+  width: 360px;
+  height: 105px;
+  background: url(../images/logo.png) no-repeat;
+}
+.show_list {
+  width: 975px;
+  position: absolute;
+  left: 30%;
+  top: 35.5%;
+  z-index: 10;
+}
+.show_list .list_box {
+  height: 750px;
+  display: none;
+}
+.show_list .list_box .img::before {
+  content: "";
+  width: 194px;
+  height: 194px;
+  background: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  z-index: 10;
+  display: none;
+}
+.show_list .list_box .img:hover::before {
+  display: block;
+}
+.show_list .list_box .img {
+  list-style: none;
+  float: left;
+  width: 194px;
+  height: 194px;
+  margin: 0 62px 35px 62px;
+  border: 3px solid black;
+}
+.show_list .list_box .img img {
+  width: 100%;
+  height: 100%;
+  vertical-align: middle;
+  overflow: hidden;
+}
+.show_list .head {
+  height: 806px;
+  margin-bottom: 60px;
+  background: rgba(0, 0, 0, 0.8);
+}
+.show_list .head .p1 {
+  width: 944px;
+  height: 63px;
+  line-height: 63px;
+  color: white;
+  font-weight: bold;
+  padding-left: 30px;
+  border-bottom: 2px solid #a71e2b;
+}
+.show_list .head .english_box {
+  width: 915px;
+  height: 710px;
+  padding: 30px 30px;
+  color: white;
+}
+.show_list .head .english_box .top {
+  width: 100%;
+  height: 223px;
+}
+.show_list .head .english_box .top .left {
+  width: 503px;
+  height: 223px;
+  float: left;
+}
+.show_list .head .english_box .top .left h3 {
+  width: 503px;
+  font-size: 18px;
+}
+.show_list .head .english_box .top .left .p2 {
+  font-size: 13px;
+  margin-top: 20px;
+}
+.show_list .head .english_box .top .left .p3 {
+  font-size: 13px;
+  margin-top: 20px;
+}
+.show_list .head .english_box .top .right {
+  float: right;
+  width: 381px;
+  height: 223px;
+}
+.show_list .head .english_box .top .right ul li {
+  margin: 23px 0;
+}
+.show_list .head .english_box .top .right ul li progress {
+  width: 350px;
+  height: 20px;
+  color: red;
+}
+.show_list .head .english_box .bottom {
+  width: 100%;
+  height: 480px;
+  overflow: hidden;
+}
+.show_list .head .english_box .bottom h3 {
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+.show_list .head .english_box .bottom .big_box {
+  list-style: none;
+}
+.show_list .head .english_box .bottom .big_box .small_box {
+  float: left;
+  width: 290px;
+  height: 405px;
+  margin: 0 7px;
+}
+.show_list .head .english_box .bottom .big_box .small_box div:nth-child(1) {
+  text-align: center;
+  width: 100%;
+  height: 200px;
+}
+.show_list .head .english_box .bottom .big_box .small_box div:nth-child(1) img {
+  width: 100%;
+  height: 100%;
+}
+.show_list .head .english_box .bottom .big_box .small_box div:nth-child(2) {
+  position: relative;
+  overflow: hidden;
+  background: white;
+  text-align: center;
+}
+.show_list .head .english_box .bottom .big_box .small_box div:nth-child(2) h4 {
+  margin-top: 20px;
+  color: black;
+}
+.show_list .head .english_box .bottom .big_box .small_box div:nth-child(2) span {
+  display: inline-block;
+  font-size: 13px;
+  margin-top: 15px;
+  color: gray;
+}
+.show_list .head .english_box .bottom .big_box .small_box div:nth-child(2) p {
+  font-size: 13px;
+  margin-top: 25px;
+  color: gray;
+}
+.show_list .head .english_box .bottom .big_box .small_box div:nth-child(2) ul {
+  height: 60px;
+  line-height: 60px;
+  padding-left: 65px;
+  padding-top: 10px;
+  list-style: none;
+}
+.show_list .head .english_box .bottom .big_box .small_box div:nth-child(2) ul li {
+  margin: 0 10px;
+  width: 20px;
+  height: 20px;
+  float: left;
+}
+.show_list .head .english_box .bottom .big_box .small_box div:nth-child(2) ul li img {
+  width: 100%;
+  height: 100%;
+}
+.show_list .bao {
+  height: 950px;
+  margin-bottom: 60px;
+  background: rgba(0, 0, 0, 0.8);
+}
+.show_list .bao .p2 {
+  width: 944px;
+  height: 63px;
+  line-height: 63px;
+  color: white;
+  font-weight: bold;
+  padding-left: 30px;
+  border-bottom: 2px solid #a71e2b;
+}
+.show_list .bao .content {
+  width: 915px;
+  height: 825px;
+  padding: 30px 30px;
+}
+.show_list .bao .content div:nth-child(1) h3 {
+  color: white;
+  font-size: 18px;
+}
+.show_list .bao .content div:nth-child(1) ul {
+  height: 700px;
+  margin-top: 30px;
+  list-style: none;
+}
+.show_list .bao .content div:nth-child(1) ul li {
+  width: 275px;
+  height: 367px;
+  background: white;
+  float: left;
+  margin: 15px 15px;
+}
+.show_list .bao .content div:nth-child(1) ul li .photo {
+  width: 275px;
+  height: 275px;
+}
+.show_list .bao .content div:nth-child(1) ul li .photo img {
+  width: 100%;
+  height: 100%;
+}
+.show_list .bao .content div:nth-child(1) ul li .english {
+  width: 80%;
+  margin-left: 30px;
+  height: 92px;
+}
+.show_list .bao .content div:nth-child(1) ul li .english p {
+  margin-top: 15px;
+}
+.show_list .bao .content div:nth-child(1) ul li .english span {
+  display: inline-block;
+  margin-top: 15px;
+  font-size: 13px;
+  color: gray;
+}
+.show_list .set {
+  height: 563px;
+  margin-bottom: 60px;
+  background: rgba(0, 0, 0, 0.8);
+}
+.show_list .set .p3 {
+  width: 944px;
+  height: 63px;
+  line-height: 63px;
+  color: white;
+  font-weight: bold;
+  padding-left: 30px;
+  border-bottom: 2px solid #a71e2b;
+}
+.show_list .set .content {
+  width: 915px;
+  height: 440px;
+  padding: 30px 30px;
+}
+.show_list .set .content h3 {
+  color: white;
+  font-size: 18px;
+}
+.show_list .set .content ul {
+  margin-top: 20px;
+  list-style: none;
+}
+.show_list .set .content ul li {
+  width: 275px;
+  height: 175px;
+  background: white;
+  margin: 15px 15px;
+  float: left;
+  position: relative;
+}
+.show_list .set .content ul li .kuan {
+  display: inline-block;
+  width: 22%;
+  height: 60px;
+  background: #a71e2b;
+}
+.show_list .set .content ul li .kuan img {
+  width: 50px;
+  height: 50%;
+  margin-top: 15px;
+  margin-left: 5px;
+}
+.show_list .set .content ul li h4 {
+  display: inline-block;
+  width: 140px;
+  position: absolute;
+  left: 30%;
+  top: 11%;
+  font-size: 18px;
+  font-family: 'Dosis', serif;
+}
+.show_list .set .content ul li .english {
+  position: absolute;
+  top: 45%;
+  left: 10%;
+  width: 232.98px;
+  height: 71px;
+  background: white;
+  color: #3c3c3c;
+  font-size: 13px;
+}
+.show_list .qiu {
+  height: 600px;
+  margin-bottom: 60px;
+  background: rgba(0, 0, 0, 0.8);
+}
+.show_list .qiu .p4 {
+  width: 944px;
+  height: 63px;
+  line-height: 63px;
+  color: white;
+  font-weight: bold;
+  padding-left: 30px;
+  border-bottom: 2px solid #a71e2b;
+}
+.show_list .qiu .content {
+  width: 915px;
+  height: 459px;
+  padding: 30px 30px;
+}
+.show_list .qiu .content .left {
+  display: inline-block;
+  width: 610px;
+  height: 400px;
+}
+.show_list .qiu .content .left h3 {
+  font-size: 18px;
+  color: white;
+}
+.show_list .qiu .content .left p {
+  margin-top: 25px;
+  margin-bottom: 25px;
+  font-size: 12px;
+  color: #dddddd;
+}
+.show_list .qiu .content .left .inputs {
+  margin-left: 15px;
+  margin-bottom: 30px;
+}
+.show_list .qiu .content .left .inputs div {
+  color: #dddddd;
+  display: inline-block;
+  margin: 0 13px;
+}
+.show_list .qiu .content .left .inputs div input {
+  height: 40px;
+}
+.show_list .qiu .content .left .message {
+  margin-left: 28px;
+  color: #dddddd;
+}
+.show_list .qiu .content .left .btn {
+  margin-left: 28px;
+  background-color: #a71e2b;
+  color: white;
+  border: 0;
+  outline: 0;
+  margin-top: 20px;
+  padding: 7px 12px;
+  text-transform: uppercas;
+}
+.show_list .qiu .content .right {
+  display: inline-block;
+  width: 275px;
+  height: 398px;
+  float: right;
+  padding-left: 30px;
+}
+.show_list .qiu .content .right h3 {
+  font-size: 18px;
+  color: white;
+}
+.show_list .qiu .content .right ul {
+  margin-top: 20px;
+  list-style: none;
+}
+.show_list .qiu .content .right ul li {
+  width: 274px;
+  height: 28px;
+  line-height: 28px;
+  position: relative;
+}
+.show_list .qiu .content .right ul li .biaoji {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+}
+.show_list .qiu .content .right ul li .biaoji img {
+  width: 100%;
+  height: 100%;
+}
+.show_list .qiu .content .right ul li .red {
+  color: #a71e2b;
+  display: inline-block;
+  position: absolute;
+}
+.show_list .qiu .content .right ul li .zi {
+  display: inline-block;
+  position: absolute;
+  left: 40%;
+  font-size: 13px;
+  color: #dddddd;
+}
+.show_list .qiu .content .right .our {
+  margin-top: 28px;
+}
+.show_list .show {
+  display: block;
+}
+.show_list .bottom {
+  z-index: 10;
+  width: 944px;
+  height: 66px;
+}
+.show_list .bottom p {
+  font-size: 12px;
+  color: white;
+}
+.show_list .bottom .tu {
+  width: 457px;
+  height: 36px;
+  float: right;
+}
+.show_list .bottom .tu ul li {
+  list-style: none;
+  float: right;
+  width: 35px;
+  height: 35px;
+  margin: 0 5px;
+}
+.show_list .bottom .tu ul li img {
+  width: 100%;
+  height: 100%;
+}
